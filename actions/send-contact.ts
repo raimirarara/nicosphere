@@ -3,7 +3,10 @@
 export default async function sendContact({ name, email, message }: { name: string; email: string; message: string }) {
   console.log("sendContact", { name, email, message })
   if (!name || !email || !message) throw new Error("Missing required fields")
-  const url = "https://hooks.slack.com/services/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"
+  const url = process.env.SLACK_WEBHOOK_URL as string
+  if (!url) {
+    throw new Error("Missing SLACK_WEBHOOK_URL")
+  }
 
   const data = {
     text: `name: ${name}\nemail: ${email}\n----------------------------------\n${message}\n----------------------------------\n`,
