@@ -25,6 +25,7 @@ export default function Form() {
 
   const handleOnSubmit = async (e: any) => {
     e.preventDefault()
+    if (!name || !email || !message) return alert("Please fill all fields")
     await sendContact({ name, email, message })
   }
 
@@ -74,11 +75,11 @@ export default function Form() {
             </FormControl>
 
             <Button
-              colorScheme="blue"
-              bg="blue.400"
+              colorScheme="red"
+              bg="red.400"
               color="white"
               _hover={{
-                bg: "blue.500",
+                bg: "red.500",
               }}
               width="full"
               onClick={handleOnSubmit}
