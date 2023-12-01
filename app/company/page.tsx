@@ -71,7 +71,7 @@ export default function Company() {
           </Text>
           <Box w={30} />
           <Text w={{ base: "220px" }} textAlign={"center"} fontWeight={"medium"} fontSize={{ base: "md", sm: "xl" }}>
-            2021年6月
+            2023年12月
           </Text>
         </Box>
         <Box w={"full"} pb={{ base: 4, sm: 8 }} display={"flex"} alignItems={"center"} justifyContent={"center"}>
@@ -99,7 +99,7 @@ export default function Company() {
           </Text>
           <Box w={30} />
           <Text w={{ base: "220px" }} textAlign={"center"} fontWeight={"medium"} fontSize={{ base: "sm", sm: "sm" }}>
-            〒158-0094 東京都世田谷区玉川3-36-6 TAMAGAWA E.Y.C 101
+            〒158-0094 東京都世田谷区玉川3-36-6
           </Text>
         </Box>
 
