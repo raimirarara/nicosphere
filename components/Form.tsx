@@ -78,7 +78,13 @@ export default function Form() {
                   <InputLeftElement>
                     <BsPerson />
                   </InputLeftElement>
-                  <Input type="text" name="name" placeholder="Your Name" onChange={(e) => setName(e.target.value)} />
+                  <Input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                  />
                 </InputGroup>
               </FormControl>
 
@@ -93,6 +99,7 @@ export default function Form() {
                     type="email"
                     name="email"
                     placeholder="Your Email"
+                    value={email}
                     onChange={(e) => setEmail(e.target.value)}
                   />
                 </InputGroup>
@@ -106,6 +113,7 @@ export default function Form() {
                   placeholder="相談内容: 例) 〇〇のサービスを作りたいです。〇〇のサービスだと費用はいくらでできますか？"
                   rows={6}
                   resize="none"
+                  value={message}
                   onChange={(e) => setMessage(e.target.value)}
                 />
               </FormControl>
