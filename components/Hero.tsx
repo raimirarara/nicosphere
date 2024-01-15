@@ -20,9 +20,6 @@ export default function Hero() {
           開発に困ったら、ニコスフィア。
         </Text>
         <Text fontWeight={200} fontSize={{ base: "xl", sm: "xl", md: "xl" }}>
-          株式会社nicosphereは、「ひとりひとりに本当に欲しかったものを」をモットーに、Webサービスの企画・開発・運用を行う会社です。
-        </Text>
-        <Text fontWeight={200} fontSize={{ base: "xl", sm: "xl", md: "xl" }}>
           もう高額な開発費用に悩まされることはありません。<br></br>ニコスフィアは、
           <Text fontWeight={600}>「業界最安値 + 最速の開発スピード」</Text>あなたのアイデアやサービスを実現します。
         </Text>
@@ -42,6 +39,9 @@ export default function Hero() {
           </Link>
         </Stack>
         <Flex w={"full"}></Flex>
+        <Text fontWeight={200} fontSize={{ base: "sm", sm: "sm", md: "md" }}>
+          株式会社nicosphereは、「ひとりひとりに本当に欲しかったものを」をモットーに、Webサービスの企画・開発・運用を行う会社です。
+        </Text>
       </Stack>
     </Container>
   )
