@@ -23,6 +23,41 @@ import { FaInstagram } from "react-icons/fa"
 export default function Product() {
   return (
     <Container maxW={"7xl"}>
+      <Heading textAlign={"center"}>開発実績</Heading>
+      <Stack
+        align={"center"}
+        spacing={{ base: 8, md: 10 }}
+        py={{ base: 20, md: 28 }}
+        direction={{ base: "column", md: "row" }}
+      >
+        <Stack flex={1} spacing={{ base: 5, md: 10 }}>
+          <Heading lineHeight={1.1} fontWeight={600} fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}>
+            <Text
+              className={myFont.className}
+              as={"span"}
+              position={"relative"}
+              _after={{
+                content: "''",
+                width: "full",
+                height: "30%",
+                position: "absolute",
+                bottom: 1,
+                left: 0,
+                bg: "red.400",
+                zIndex: -1,
+              }}
+            >
+              生成AI関連 4件
+            </Text>
+          </Heading>
+          <Text fontSize={{ base: "md", sm: "xl" }} color={"gray.800"}>
+            生成AIを用いたサービスを4件開発しました。
+            <br></br>
+            生成AI + LINE botの開発 2件, 生成AI + 飲食店のモバイルオーダー, 生成AI +
+            音声クローン技術を使用したwebサービス
+          </Text>
+        </Stack>
+      </Stack>
       <Stack
         align={"center"}
         spacing={{ base: 8, md: 10 }}

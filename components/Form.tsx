@@ -67,7 +67,7 @@ export default function Form() {
 
               <Textarea
                 name="message"
-                placeholder="Your Message"
+                placeholder="相談内容: 例) 〇〇のサービスを作りたいです。〇〇のサービスだと費用はいくらでできますか？"
                 rows={6}
                 resize="none"
                 onChange={(e) => setMessage(e.target.value)}
