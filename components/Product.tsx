@@ -53,8 +53,10 @@ export default function Product() {
           <Text fontSize={{ base: "md", sm: "xl" }} color={"gray.800"}>
             生成AIを用いたサービスを4件開発しました。
             <br></br>
-            生成AI + LINE botの開発 2件, 生成AI + 飲食店のモバイルオーダー, 生成AI +
+            生成AI + 音声クローン + 決済機能 + LINE botの開発 2件, 生成AI + 飲食店のモバイルオーダー, 生成AI +
             音声クローン技術を使用したwebサービス
+            <br></br>
+            全て本番運用されています。
           </Text>
         </Stack>
       </Stack>

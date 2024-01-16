@@ -20,8 +20,9 @@ export default function Hero() {
           開発に困ったら、ニコスフィア。
         </Text>
         <Text fontWeight={200} fontSize={{ base: "xl", sm: "xl", md: "xl" }}>
-          もう高額な開発費用に悩まされることはありません。<br></br>ニコスフィアは、
-          <Text fontWeight={600}>「業界最安値 + 最速の開発スピード」</Text>あなたのアイデアやサービスを実現します。
+          もう何ヶ月もサービスが出来上がらず、高額な開発費用をドブに捨てることはありません。<br></br>ニコスフィアは、
+          <Text fontWeight={600}>「高クオリティ + 最速の開発スピード」</Text>
+          であなたのサービスを実現します。（最短2週間で本番運用できます）
         </Text>
         <Stack spacing={6} direction={"row"}>
           <Link href={"/contact"} target="_blank">
