@@ -25,13 +25,13 @@ export default function Product() {
     <Container maxW={"7xl"}>
       <Heading textAlign={"center"}>開発実績</Heading>
       <Stack
-        align={"center"}
         spacing={{ base: 8, md: 10 }}
         py={{ base: 20, md: 28 }}
         direction={{ base: "column", md: "row" }}
+        w={"full"}
       >
         <Stack flex={1} spacing={{ base: 5, md: 10 }}>
-          <Heading lineHeight={1.1} fontWeight={600} fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}>
+          <Heading lineHeight={1.1} fontWeight={600} fontSize={{ base: "3xl", sm: "4xl", lg: "4xl" }}>
             <Text
               className={myFont.className}
               as={"span"}
@@ -47,18 +47,27 @@ export default function Product() {
                 zIndex: -1,
               }}
             >
-              生成AI関連 4件
+              生成AI + LINE bot
             </Text>
           </Heading>
           <Text fontSize={{ base: "md", sm: "xl" }} color={"gray.800"}>
-            生成AIを用いたサービスを4件開発しました。
-            <br></br>
-            生成AI + 音声クローン + 決済機能 + LINE botの開発 2件, 生成AI + 飲食店のモバイルオーダー, 生成AI +
-            音声クローン技術を使用したwebサービス
-            <br></br>
-            全て本番運用されています。
+            貴社のLINE公式アカウントに、AIを利用したLINE
+            botを導入しませんか？お客様の質問にAIが自動で回答することで、貴社の負担を軽減し、効率的な業務運営を実現します。
+            メニューにサブスクリプションの決済を導入することで、新たな収益機会を生み出すことも可能です。
           </Text>
         </Stack>
+        <Flex flex={1} justify={"center"} align={"center"}>
+          <Box
+            position={"relative"}
+            height={"full"}
+            rounded={"2xl"}
+            boxShadow={"2xl"}
+            width={"780px"}
+            overflow={"hidden"}
+          >
+            <Image alt={"Hero Image"} fit={"cover"} align={"center"} w={"100%"} h={"100%"} src={"/linebot.jpg"} />
+          </Box>
+        </Flex>
       </Stack>
       <Stack
         align={"center"}
@@ -67,7 +76,7 @@ export default function Product() {
         direction={{ base: "column", md: "row" }}
       >
         <Stack flex={1} spacing={{ base: 5, md: 10 }}>
-          <Heading lineHeight={1.1} fontWeight={600} fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}>
+          <Heading lineHeight={1.1} fontWeight={600} fontSize={{ base: "3xl", sm: "4xl", lg: "4xl" }}>
             <Text
               className={myFont.className}
               as={"span"}

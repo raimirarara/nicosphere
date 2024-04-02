@@ -1,7 +1,7 @@
 "use client"
 
 import { myFont } from "@/fonts/const"
-import { Flex, Container, Heading, Stack, Text, Button, Icon, IconProps } from "@chakra-ui/react"
+import { Flex, Container, Heading, Stack, Text, Button, Icon, IconProps, Center, Box, Image } from "@chakra-ui/react"
 import Link from "next/link"
 
 export default function Hero() {
@@ -16,30 +16,46 @@ export default function Hero() {
         >
           nicosphere
         </Heading>
-        <Text fontWeight={600} fontSize={{ base: "3xl", sm: "3xl", md: "3xl" }}>
-          開発に困ったら、ニコスフィア。
-        </Text>
-        <Text fontWeight={200} fontSize={{ base: "xl", sm: "xl", md: "xl" }}>
-          もう何ヶ月もサービスが出来上がらず、高額な開発費用をドブに捨てることはありません。<br></br>ニコスフィアは、
-          <Text fontWeight={600}>「高クオリティ + 最速の開発スピード」</Text>
-          であなたのサービスを実現します。（最短2週間で本番運用できます）
-        </Text>
-        <Stack spacing={6} direction={"row"}>
-          <Link href={"/contact"} target="_blank">
-            <Button
-              rounded={"full"}
-              size={"lg"}
-              fontWeight={"normal"}
-              px={6}
-              colorScheme={"red"}
-              bg={"red.400"}
-              _hover={{ bg: "red.500" }}
+        <Flex w={"full"}>
+          <Stack mx={8} w={"50%"}>
+            <Text fontWeight={600} fontSize={{ base: "xl", sm: "xl", md: "2xl" }} textAlign={"start"}>
+              生成AIを使ったWebサービス開発,モバイルアプリ開発を最短2週間で実現
+            </Text>
+            <Center flexDir={"column"}>
+              <Text my={4} fontWeight={200} fontSize={{ base: "xl", sm: "xl", md: "xl" }}>
+                システム開発に関するお悩み等、お気軽にご相談ください。
+              </Text>
+              <Stack spacing={6} direction={"row"}>
+                <Link href={"/contact"} target="_blank">
+                  <Button
+                    rounded={"full"}
+                    size={"lg"}
+                    fontWeight={"normal"}
+                    px={6}
+                    colorScheme={"red"}
+                    bg={"red.400"}
+                    _hover={{ bg: "red.500" }}
+                  >
+                    まずは相談
+                  </Button>
+                </Link>
+              </Stack>
+            </Center>
+          </Stack>
+          <Flex flex={1} justify={"center"} align={"center"} position={"relative"} w={"50%"}>
+            <Box
+              position={"relative"}
+              height={{ sm: "300px" }}
+              rounded={"2xl"}
+              boxShadow={"2xl"}
+              width={"full"}
+              overflow={"hidden"}
             >
-              まずは相談
-            </Button>
-          </Link>
-        </Stack>
-        <Flex w={"full"}></Flex>
+              <Image alt={"Hero Image"} fit={"cover"} align={"center"} w={"100%"} h={"100%"} src={"/hero.webp"} />
+            </Box>
+          </Flex>
+        </Flex>
+
         <Text fontWeight={200} fontSize={{ base: "sm", sm: "sm", md: "md" }}>
           株式会社nicosphereは、「ひとりひとりに本当に欲しかったものを」をモットーに、Webサービスの企画・開発・運用を行う会社です。
         </Text>
