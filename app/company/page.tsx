@@ -85,7 +85,7 @@ export default function Company() {
           </Text>
           <Box w={30} />
           <Text w={{ base: "220px" }} textAlign={"center"} fontWeight={"medium"} fontSize={{ base: "md", sm: "xl" }}>
-            代表取締役CEO 三浦 莉
+            代表取締役 三浦 莉
           </Text>
         </Box>
         <Box w={"full"} pb={{ base: 4, sm: 8 }} display={"flex"} alignItems={"center"} justifyContent={"center"}>
