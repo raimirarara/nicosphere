@@ -26,7 +26,7 @@ export default function Product() {
       <Heading textAlign={"center"}>開発実績</Heading>
       <Stack
         spacing={{ base: 8, md: 10 }}
-        py={{ base: 20, md: 28 }}
+        py={{ base: 10, md: 20 }}
         direction={{ base: "column", md: "row" }}
         w={"full"}
       >
