@@ -1,8 +1,6 @@
 "use client"
 
-import { myFont } from "@/fonts/const"
-import { Flex, Container, Heading, Stack, Text, Button, Icon, IconProps, Center, Box, Image } from "@chakra-ui/react"
-import Link from "next/link"
+import { Box, Center, Container, Flex, Image, Stack, Text } from "@chakra-ui/react"
 import TypeWriter from "./TypeWriter"
 
 export default function Hero() {
@@ -22,7 +20,7 @@ export default function Hero() {
                 <Text my={4} fontWeight={200} fontSize={{ base: "xl", sm: "xl", md: "xl" }}>
                   システム開発に関するお悩み等、お気軽にご相談ください。
                 </Text>
-                <Stack spacing={6} direction={"row"}>
+                {/* <Stack spacing={6} direction={"row"}>
                   <Link href={"/contact"} target="_blank">
                     <Button
                       rounded={"full"}
@@ -36,7 +34,7 @@ export default function Hero() {
                       まずは相談
                     </Button>
                   </Link>
-                </Stack>
+                </Stack> */}
               </Center>
             </Stack>
             <Flex

@@ -1,30 +1,14 @@
 "use client"
 
-import { myFont } from "@/fonts/const"
 import {
-  Container,
-  Stack,
-  Flex,
-  Box,
-  Heading,
-  Text,
-  Button,
-  Image,
-  Icon,
-  IconButton,
-  createIcon,
-  IconProps,
-  useColorModeValue,
-  VisuallyHidden,
+  Container
 } from "@chakra-ui/react"
-import Link from "next/link"
-import { FaInstagram } from "react-icons/fa"
 
 export default function Product() {
   return (
     <Container maxW={"7xl"}>
-      <Heading textAlign={"center"}>開発実績</Heading>
-      <Stack
+      {/* <Heading textAlign={"center"}>開発実績</Heading> */}
+      {/* <Stack
         spacing={{ base: 8, md: 10 }}
         py={{ base: 10, md: 20 }}
         direction={{ base: "column", md: "row" }}
@@ -153,7 +137,7 @@ export default function Product() {
             />
           </Box>
         </Flex>
-      </Stack>
+      </Stack> */}
     </Container>
   )
 }
